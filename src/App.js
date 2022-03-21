@@ -2,6 +2,7 @@ import Home from './components/Home'
 import './App.css';
 import { Router } from '@reach/router';
 import SinglePost from './components/SinglePost';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <Home path="/"/>
         <SinglePost path="/post/:id" />
+        <Login path="/login"/>
       </Router>
     </div>
   );
