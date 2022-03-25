@@ -11,7 +11,7 @@ const SinglePost = (props) => {
     const [post, setPost] = useState({});
     const [errorMessage, setErrorMessage] = useState("");
 
-    const wordPressSiteUrl = 'http://localhost:8080/react-wordpress/';
+    const wordPressSiteUrl = 'http://localhost:8080/react-wordpress';
 
     useEffect(() => {
         setLoading(true);

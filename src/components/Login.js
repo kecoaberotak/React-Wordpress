@@ -13,21 +13,22 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const [errorMsg, setErrorMsg] = useState('');
 
-    const siteUrl = 'http://localhost:8080/react-wordpress';
+    const siteUrl = 'http://localhost:8080/react-wordpress'; 
 
-    const loginData = {
-        username,
-        password,
-    }    
+    let loginData = {};
 
     const formSubmit = (e) => {
         e.preventDefault();
+
+        loginData = {
+            username : username,
+            password: password,
+        }
+
+        setLoading(true);
+
         console.log('test');
     };
-
-    useEffect(() => {
-        setLoading(true);
-    }, [])
 
     useEffect(() => {
         axios.post(`${siteUrl}/wp-json/jwt-auth/v1/token`, loginData)

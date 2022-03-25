@@ -5,6 +5,7 @@ import SinglePost from './components/SinglePost';
 import Login from './components/Login';
 
 function App() {
+  
   return (
     <div>
       <Router>

@@ -13,7 +13,7 @@ const Home = () => {
     const [posts, setPosts] = useState([]);
     const [errorMessage, setErrorMessage] = useState("");
 
-    const wordPressSiteUrl = 'http://localhost:8080/react-wordpress/';
+    const wordPressSiteUrl = 'http://localhost:8080/react-wordpress';
 
     useEffect(() => {
         setLoading(true);
